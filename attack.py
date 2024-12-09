@@ -17,7 +17,7 @@ if os.getuid() != 0:
 
 def main():
     router.run()
-    t_http = threading.Thread(target=http.run, args=(opts.iface))
+    t_http = threading.Thread(target=http.run, args=(opts.iface,))
     t_mitm = threading.Thread(target=mitm.run, args=(opts.router, opts.target, opts.iface))
     t_dns = threading.Thread(target=dns.run, args=(opts.router, opts.target, opts.iface))
 

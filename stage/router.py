@@ -4,9 +4,9 @@ import sys
 
 COMMANDS = [
     #-- Linux
-    #  'iptables -F',
-    #  'iptables --policy FORWARD ACCEPT',
-    #  'sysctl -w net.ipv4.ip_forward=1'
+    #   'iptables -F',
+    #   'iptables --policy FORWARD ACCEPT',
+    #   'sysctl -w net.ipv4.ip_forward=1'
 
     #-- MAC OS
     # 'pfctl -Fa -f /etc/pf.conf',
